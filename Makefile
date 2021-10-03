@@ -8,6 +8,10 @@ install:
 install-dev:
 	poetry install
 
+.PHONY: install-with-doc
+install-with-doc:
+	poetry install --with docs
+
 .PHONY: update-packages
 update-packages:
 	poetry update
@@ -15,3 +19,7 @@ update-packages:
 .PHONY: test
 test:
 	poetry run pytest src/tests
+
+.PHONY: format
+format:
+	@poetry run black .

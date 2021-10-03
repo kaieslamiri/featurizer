@@ -1,0 +1,8 @@
+site_name: featurizer
+nav:
+  - Home: index.md
+  - About: about.md
+  - Featurizer:
+    - "Featurizer": ./README.md
+theme:
+  name: material
